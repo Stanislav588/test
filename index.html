@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <button onclick="changeDefault()">Ingen layout</button>
+    <button onclick="changeFlex()">Vertical layout</button>
+    <button onclick="changeVertical()">Horisontal layout</button>
+    <button onclick="changeGrid()">Grid layout</button>
+
+    <h1 class="btn">Eksempel 1</h1>
+    <div style="gap: 10px" id="container">
+      <div style="background-color: rgb(185, 185, 185)" class="html">
+        <h2
+          style="
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+            background-color: blue;
+            text-align: center;
+          "
+          onclick="onChangeHtml()"
+        >
+          HTML
+        </h2>
+        <div id="html" style="display: none">
+          <p style="padding-left: 20px">
+            Vi bruker HTML til å definere et dokument.
+          </p>
+          <ul style="padding-bottom: 20px" class="blue">
+            <li>Tagger for grunnleggende oppsett av en HTML-fil</li>
+            <li>Tagger for grunnleggende formatering av tekst</li>
+            <li>&lt; div &gt;</li>
+            <li>&lt; input type="text" &gt;</li>
+            <li>&lt; button &gt;</li>
+            <li><a href="#!"> W3Schools HTML Tutorial </a></li>
+            <li><a href="#!"> W3Schools HTML Reference </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background-color: rgb(185, 185, 185)">
+        <h2
+          style="
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+            background-color: red;
+            text-align: center;
+          "
+          onclick="onChangeCss()"
+        >
+          CSS
+        </h2>
+        <div id="css" style="display: none">
+          <div style="padding-left: 20px">
+            Vi bruker CSS til å style et dokument, altså farger, fonter,
+            utseende og lignende.
+          </div>
+
+          <ul style="padding-bottom: 20px">
+            <li>background-color</li>
+            <li>color</li>
+            <li>padding</li>
+            <li>margin</li>
+            <li>border</li>
+            <li>text</li>
+            <li>-align</li>
+            <li>font-size</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>W3Schools CSS Tutorial</li>
+            <li>W3Schools CSS Reference</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background-color: rgb(185, 185, 185)">
+        <h2
+          style="
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+            background-color: rgb(172, 172, 0);
+            text-align: center;
+          "
+          onclick="onChangeJs()"
+        >
+          JavaScript
+        </h2>
+        <div style="display: none" id="js">
+          <div style="padding-left: 20px">
+            Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi
+            skal
+            <br />
+            lære grunnleggende programmering ved å manipulere HTML- og CSS-
+            <br />kode på en nettside ved hjelp av JavaScript.
+          </div>
+
+          <ul style="padding-bottom: 20px">
+            <li>
+              Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi
+              <br />
+              heller å følge kurset vårt på Moodle.
+            </li>
+            <li>W3Schools JavaScript Reference</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
